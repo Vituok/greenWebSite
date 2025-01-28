@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe:ital@0;1&family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&family=Poiret+One&display=swap');
+
+
+*{
+  margin: 0;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+a s :hover{
+  color: #37e502;
+}
+
+.background1 {
+  background-image: url('./src/assets/background1.png');
+  background-size: cover; /* Фон заполняет весь контейнер */
+  background-repeat: no-repeat; /* Изображение не повторяется */
+  background-position: center; /* Центровка изображения */
+  height: 100vh; /* Высота контейнера на весь экран */
+  width: 100%;
+ 
+}
+
+.quote{
+  color: white;
+
+  padding-left: 70px;
+  font-family: "Alumni Sans Pinstripe", serif;
+  font-weight: 800;
+  font-size: 40px;
+  opacity: 60%;
+}
+
+#root{
+
+  margin: 0;
+}
+
+.menuBar ul{
+  display: flex;
+  flex-direction: column;
+  font-family: "Alumni Sans Pinstripe", serif;
+  gap: 100px;
+  align-content: flex-start;
+  color: white;
+  padding-right: 20px;
+  list-style: none;
+}
+
+.flexConteiner{
+  display: flex;
+  justify-content: space-between;
+}
+
+.dot{
+  color: white;
+  padding-right: 10px;
+  font-size: large;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;     
+ /*i wil use align-items: (flex-start), (center) and (flex-end); for dot position */
+}
+
+
+.quotePosition{
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+::-webkit-scrollbar{
+  display: none;
+  scroll-behavior: smooth;
+}
+
+.planSection{
+  height: 100vh;
+  background: #000;
+  padding-top: 40px;
+  display: flex;
+flex-direction:column  
+}
+
+.planCard{
+  border: solid white 1px;
+  border-radius: 5px;
+  width: 500px;
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  
+  justify-content: center;
+  align-items: center;
+margin-bottom: 20px;
+  font-family: "Alumni Sans Pinstripe", serif;
+  gap: 17px;
+  color: white;
+}
