@@ -15,11 +15,12 @@ a s :hover{
 }
 
 .background1 {
-  background-image: url('./src/assets/background1.png');
+  /* background-image: url('./src/assets/background1.png');
   background-size: cover; /* Фон заполняет весь контейнер */
-  background-repeat: no-repeat; /* Изображение не повторяется */
-  background-position: center; /* Центровка изображения */
+  /* background-repeat: no-repeat; Изображение не повторяется */
+  /* background-position: center; Центровка изображения */
   height: 100vh; /* Высота контейнера на весь экран */
+  background-color: #060808;
   width: 100%;
  
 }
@@ -37,8 +38,25 @@ a s :hover{
 #root{
 
   margin: 0;
+  display: flex;
 }
 
+.menuBar{
+  position: fixed;
+  top: calc(50% - 100px);
+  right: 20px;
+
+  display: flex;
+  align-items: center;
+}
+
+.alignItemsStart{
+  align-items: flex-start;
+}
+
+.marginMenu{
+  padding-right: 140px;
+}
 .menuBar ul{
   display: flex;
   flex-direction: column;
@@ -52,7 +70,14 @@ a s :hover{
 
 .flexConteiner{
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+
+  
+}
+
+.flexCol{
+ display: flex;
+ flex-wrap: wrap;
 }
 
 .dot{
@@ -80,11 +105,17 @@ a s :hover{
 }
 
 .planSection{
-  height: 100vh;
-  background: #000;
-  padding-top: 40px;
+  
+  background: #060808;
+  
   display: flex;
-flex-direction:column  
+  align-items: center;
+  height: 100vh;
+
+  align-content: center;
+  justify-content: center;
+
+  gap: 16px;
 }
 
 .planCard{
@@ -93,12 +124,14 @@ flex-direction:column
   width: 500px;
   height: 120px;
   display: flex;
+  flex: 1 1 calc(50% - (16px + 70px));
+ 
   flex-direction: column;
-  
   justify-content: center;
   align-items: center;
-margin-bottom: 20px;
+  margin: 20px;
   font-family: "Alumni Sans Pinstripe", serif;
   gap: 17px;
   color: white;
 }
+

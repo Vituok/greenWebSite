@@ -3,9 +3,9 @@ import React from "react";
 
 const Plan = ({ items }) => {
   return (
-<div className="planSection">
+<div className="planSection marginMenu" id="plan">
 
-    
+    <div className="flexCol">
    
       {items.map((item, index) => (
         <div className="planCard"
@@ -18,9 +18,11 @@ const Plan = ({ items }) => {
           <p    >{item.text}</p>
         </div>
       ))}
-  
 
     </div>
+
+    </div>
+
   );
 };
 

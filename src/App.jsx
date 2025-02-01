@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import Quote from './components/Quote'
 import Plan from './components/Plan'
+import Menu from './components/Menu'
 import './App.css'
 
 
@@ -36,8 +37,9 @@ function App() {
   
   return (
     <div>
+        <Menu/>
        <Quote/>
-      <Plan items={items}/>
+       <Plan items={items}/>
    </div>
   
   )
